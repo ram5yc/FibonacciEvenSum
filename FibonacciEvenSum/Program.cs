@@ -30,14 +30,14 @@ namespace FibonacciEvenSum
             {
                 //string to make the output of addition stored in new variable
                 fib3 = fib1 + fib2;
-                fib1 = fib2;
-                fib2 = fib3;
-                //fib4 += fib3;
+                fib1 = fib2; //have to equal second variable to first
+                fib2 = fib3; //have to equal third variable to second to push down the line
+                //fib4 += fib2; //keep for later
 
 
-                if (fib2 % 2 == 0)
+                if (fib2 % 2 == 0) //find numbers divisible by 2 (even)
                 {
-                    fib4 += fib2;
+                    fib4 += fib2; //fib2 turns into fib3 so that is why we need to store it in fib4
                 }
 
                 
